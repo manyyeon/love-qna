@@ -149,7 +149,6 @@ export default function LoveQnA() {
           {/* )} */}
         </CardContent>
       </Card>
-      //{" "}
     </div>
   );
 }
