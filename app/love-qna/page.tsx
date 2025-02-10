@@ -18,12 +18,12 @@ const questions = [
   },
   {
     question: "What kind of dates do you like?",
-    myAnswer: `hanging out on campus, rock climbing, skateboarding, cooking, etc. \n\nNo matter what we do, I love how we always have lots of conversations. I really enjoy having a conversation with you from casual daily chats to deep conversations :)`,
+    myAnswer: `hanging out on campus, rock climbing, skateboarding, cooking, etc. \n\nTalking with you is the best date for me!`,
   },
   {
     question: "What’s a moment I did something that really touched you?",
     myAnswer:
-      "I was touched when you practiced speaking Korean for me! You weren’t originally interested in Korea, and you didn’t have any Korean friends before, so the fact that you made the effort to learn it just for me meant so much to me.",
+      "I was touched when you practiced speaking Korean for me! You weren’t interested in Korea, and you didn’t have any Korean friends before, so the fact that you made the effort to learn it just for me meant so much to me.",
   },
 ];
 
