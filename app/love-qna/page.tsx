@@ -10,7 +10,7 @@ const questions = [
   {
     question: "What was your first impression of me?",
     myAnswer: `From the first time I saw you, I thought you were really cute 😃 So, I wanted to be friends with you and I wanted to talk to you. But I was too shy to do it.
-      \nSo when you talked to me first, I was happy. But, I thought you were just trying to be friends with me, so when you texted me saying you were excited for our first date, I was actually surprised. But, I liked it 😊`,
+      \nSo when you talked to me first, I was happy, too!`,
   },
   {
     question: "When do you think I look cute?",
