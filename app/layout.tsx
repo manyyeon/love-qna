@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dayeon & Jason QnA",
+  title: "Happy Valentine's Day!",
   description: "Happy Valentine's Day!",
 };
 

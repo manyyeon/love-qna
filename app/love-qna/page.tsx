@@ -3,21 +3,20 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 
 const questions = [
   {
-    question: "What was your first impression of me?",
-    myAnswer: `From the first time I saw you, I thought you were really cute 😃 So, I wanted to be friends with you and I wanted to talk to you. But I was too shy to do it.
-      \nSo when you talked to me first, I was happy, too!`,
+    question: "When do you think I look cute?",
+    myAnswer: `When you speak Korean, you are so cute! 😊`,
   },
   {
     question: "When do you think I look cute?",
     myAnswer: `When you speak Korean, you are so cute! 😊`,
   },
   {
-    question: "What kind of dates do you like?",
+    question: "What kind of dates do you want to do with me?",
     myAnswer: `hanging out on campus, rock climbing, skateboarding, cooking, etc. \n\nTalking with you is the best date for me!`,
   },
   {
@@ -28,33 +27,33 @@ const questions = [
 ];
 
 export default function LoveQnA() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [answers, setAnswers] = useState<string[]>(
-    Array(questions.length).fill("")
-  );
-  const [showAnswer, setShowAnswer] = useState(false);
+  // const [currentIndex, setCurrentIndex] = useState(0);
+  // const [answers, setAnswers] = useState<string[]>(
+  //   Array(questions.length).fill("")
+  // );
+  // const [showAnswer, setShowAnswer] = useState(false);
   const [showHearts, setShowHearts] = useState(false);
 
-  const handleInputChange = (value: string) => {
-    const newAnswers = [...answers];
-    newAnswers[currentIndex] = value;
-    setAnswers(newAnswers);
-  };
+  // const handleInputChange = (value: string) => {
+  //   const newAnswers = [...answers];
+  //   newAnswers[currentIndex] = value;
+  //   setAnswers(newAnswers);
+  // };
 
-  const revealAnswer = () => {
-    setShowAnswer(true);
-  };
+  // const revealAnswer = () => {
+  //   setShowAnswer(true);
+  // };
 
-  const nextQuestion = () => {
-    setShowAnswer(false);
-    setCurrentIndex((prev) => prev + 1);
-  };
+  // const nextQuestion = () => {
+  //   setShowAnswer(false);
+  //   setCurrentIndex((prev) => prev + 1);
+  // };
 
   return (
     <div className="p-6 max-w-md mx-auto space-y-6">
       <Card>
         <CardContent>
-          {currentIndex < questions.length ? (
+          {/*  {currentIndex < questions.length ? (
             <>
               <div>
                 <div className="mb-2 font-bold">
@@ -116,40 +115,41 @@ export default function LoveQnA() {
                   height={200}
                   alt="Valentine"
                 />
-              </div>
-              <h2 className="text-2xl font-semibold mt-4">
-                Would you be my Valentine?
-              </h2>
-              <div className="mt-4 flex justify-center">
-                <Button onClick={() => setShowHearts(true)}>Yes!</Button>
-              </div>
-              {showHearts && (
-                <div className="absolute inset-0 overflow-hidden">
-                  {Array.from({ length: 30 }).map((_, i) => (
-                    <motion.img
-                      key={i}
-                      src="/images/heart.png"
-                      className="absolute w-16 h-12"
-                      initial={{ y: "300%", opacity: 0 }}
-                      animate={{ y: "-200%", opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{
-                        duration: 3,
-                        delay: i * 0.1,
-                        repeat: Infinity,
-                        repeatType: "loop",
-                      }}
-                      style={{
-                        left: `${Math.random() * 100}%`,
-                      }}
-                    />
-                  ))}
-                </div>
-              )}
+              </div> */}
+          <h2 className="text-2xl font-semibold mt-4">
+            Would you be my Valentine?
+          </h2>
+          <div className="mt-4 flex justify-center">
+            <Button onClick={() => setShowHearts(true)}>Yes!</Button>
+          </div>
+          {showHearts && (
+            <div className="absolute inset-0 overflow-hidden">
+              {Array.from({ length: 30 }).map((_, i) => (
+                <motion.img
+                  key={i}
+                  src="/images/heart.png"
+                  className="absolute w-16 h-12"
+                  initial={{ y: "300%", opacity: 0 }}
+                  animate={{ y: "-200%", opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{
+                    duration: 3,
+                    delay: i * 0.1,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                  }}
+                  style={{
+                    left: `${Math.random() * 100}%`,
+                  }}
+                />
+              ))}
             </div>
           )}
+          {/* </div> */}
+          {/* )} */}
         </CardContent>
       </Card>
+      //{" "}
     </div>
   );
 }
