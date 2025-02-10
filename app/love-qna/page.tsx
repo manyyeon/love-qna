@@ -9,23 +9,21 @@ import { motion } from "framer-motion";
 const questions = [
   {
     question: "What was your first impression of me?",
-    myAnswer:
-      "From the first time I saw you, I thought you were really cute 😃 So, I wanted to be friends with you and I wanted to talk to you. But I was too shy to do it. So when you approached me first, I was happy. But I thought you were just trying to be friends with me, so when you texted me saying you were excited for our first date, I was actually surprised. But, I liked it.",
+    myAnswer: `From the first time I saw you, I thought you were really cute 😃 So, I wanted to be friends with you and I wanted to talk to you. But I was too shy to do it.
+      \nSo when you talked to me first, I was happy. But, I thought you were just trying to be friends with me, so when you texted me saying you were excited for our first date, I was actually surprised. But, I liked it 😊`,
   },
   {
     question: "When do you think I look cute?",
-    myAnswer:
-      "When you speak Korean, you are so cute. Also, when you look at me with affectionate eyes, and when you excitedly explain something to me with so much enthusiasm.",
+    myAnswer: `When you speak Korean, you are so cute! 😊 Also, when you look at me with loving eyes, and when you excitedly explain something to me.`,
   },
   {
     question: "What kind of dates do you like?",
-    myAnswer:
-      "I had so much fun going climbing with you, and I also enjoyed skateboarding together. Grocery shopping and cooking together was really fun too. Watching Netflix with you is great, and I love going thrifting and playing GeoGuessr with you. Studying together at the library is nice, and even just taking a walk around campus with you makes me happy. No matter what we do, I love how we always have lots of conversations. I really enjoy talking—whether it’s casual daily chats or deep conversations. And when I’m with you, we always talk a lot no matter what we’re doing, which makes me really happy.",
+    myAnswer: `I had so much fun going rock climbing with you, and I also enjoyed skateboarding together. Grocery shopping and cooking together was really fun, too. Watching Netflix with you is great, and I love going thrifting and playing GeoGuessr with you. Studying together at the library is nice, and even just taking a walk around campus with you makes me happy.\n\nNo matter what we do, I love how we always have lots of conversations. I really enjoy having a conversation with you from casual daily chats to deep conversations :) I feel comfortable and happy when I’m with you.`,
   },
   {
     question: "What’s a moment I did something that really touched you?",
     myAnswer:
-      "I was really touched when you practiced speaking Korean for me. You weren’t originally interested in Korea, and you didn’t have any Korean friends before, so the fact that you made the effort to learn it just for me meant so much to me. I was really grateful, and it truly moved my heart.",
+      "I was really touched when you practiced speaking Korean for me. You weren’t originally interested in Korea, and you didn’t have any Korean friends before, so the fact that you made the effort to learn it just for me meant so much to me. I was really grateful, and it truly moved my heart 😉",
   },
 ];
 
@@ -86,11 +84,15 @@ export default function LoveQnA() {
                   </div>
                   <div className="mb-2 p-2 bg-purple-100 rounded-md">
                     <div className="mb-2 font-bold">Dayeon</div>
-                    <div>{questions[currentIndex].myAnswer}</div>
+                    <div className="text-wrap whitespace-pre">
+                      {questions[currentIndex].myAnswer}
+                    </div>
                   </div>
                   <div className="mb-2 p-2 bg-purple-200 rounded-md">
                     <div className="mb-2 font-bold">Jason</div>
-                    <div>{answers[currentIndex]}</div>
+                    <div className="text-wrap whitespace-pre">
+                      {answers[currentIndex]}
+                    </div>
                   </div>
                 </div>
               )}
