@@ -6,25 +6,25 @@ import { Card, CardContent } from "@/components/ui/card";
 
 import { motion } from "framer-motion";
 
-const questions = [
-  {
-    question: "When do you think I look cute?",
-    myAnswer: `When you speak Korean, you are so cute! 😊`,
-  },
-  {
-    question: "When do you think I look cute?",
-    myAnswer: `When you speak Korean, you are so cute! 😊`,
-  },
-  {
-    question: "What kind of dates do you want to do with me?",
-    myAnswer: `hanging out on campus, rock climbing, skateboarding, cooking, etc. \n\nTalking with you is the best date for me!`,
-  },
-  {
-    question: "What’s a moment I did something that really touched you?",
-    myAnswer:
-      "I was touched when you practiced speaking Korean for me! You weren’t interested in Korea, and you didn’t have any Korean friends before, so the fact that you made the effort to learn it just for me meant so much to me.",
-  },
-];
+// const questions = [
+//   {
+//     question: "When do you think I look cute?",
+//     myAnswer: `When you speak Korean, you are so cute! 😊`,
+//   },
+//   {
+//     question: "When do you think I look cute?",
+//     myAnswer: `When you speak Korean, you are so cute! 😊`,
+//   },
+//   {
+//     question: "What kind of dates do you want to do with me?",
+//     myAnswer: `hanging out on campus, rock climbing, skateboarding, cooking, etc. \n\nTalking with you is the best date for me!`,
+//   },
+//   {
+//     question: "What’s a moment I did something that really touched you?",
+//     myAnswer:
+//       "I was touched when you practiced speaking Korean for me! You weren’t interested in Korea, and you didn’t have any Korean friends before, so the fact that you made the effort to learn it just for me meant so much to me.",
+//   },
+// ];
 
 export default function LoveQnA() {
   // const [currentIndex, setCurrentIndex] = useState(0);
